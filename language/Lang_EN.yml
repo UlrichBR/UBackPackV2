@@ -3,7 +3,7 @@ LANGUAGE:
   command by player: '%tag% <red>This command must be used by a player.'
   plaer not found: '%tag% <red>Player not found!'
   no permission: '%tag% <red>You do not have permission'
-  separer: <yellow>████████████████████████████████
+  separer: <gradient:gold:yellow>████████████████████████████████
   command in cooldown: '%tag% <red>Wait for <aqua>%sec% <red>to use this command again.'
   help player header: '<yellow>BackPack Help:'
   help admin header: '<dark_red>Admin BackPack Help:'
@@ -221,6 +221,7 @@ COMMANDS:
   backpack help show on_error: '%tag%<red>Error to show text '
   backpack help show on_usage: '%tag% <gold>Use <aqua>/backpack help'
   backpack virtual show on_help: ' <gold>/backpack virtual <gray>-<yellow> Open virtual BackPack '
+  backpack virtual show on_help_json hover_text: <green>Click to open a virtual BackPack.
   backpack virtual show on_success: '%tag% <green>You are seeing the virtual!'
   backpack virtual show on_error: '%tag%<red>Error to open '
   backpack virtual show on_usage: '%tag% <red>Use <gold>/backpack virtual'
@@ -259,5 +260,3 @@ COMMANDS:
   ubackpack give show on_success: '%tag% <green>You have sent <aqua>%amount% <green>backpack <aqua>%backpack_name% <green>to <aqua>%player%'
   ubackpack give show on_error: '%tag%<red>An error occurred when giveing '
   ubackpack give show on_usage: '%tag% <red>Use <dark_red>/ubackpack give <player> <backpack> <amount>'
-Commands:
-  backpack virtual show on_help_json hover_text: <green>Click to open a virtual BackPack.
