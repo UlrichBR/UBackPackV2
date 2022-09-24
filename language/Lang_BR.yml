@@ -1,0 +1,271 @@
+ 
+LANGUAGE:
+  command by player: '%tag% <red>Este comando deve ser usado por um jogador.'
+  plaer not found: '%tag% <red>Jogador não encontrado!'
+  no permission: '%tag% <red>Você não tem permissão'
+  separer: <gradient:gold:yellow>████████████████████████████████
+  command in cooldown: '%tag% <red>Aguarde por <aqua>%sec% <red>para usar isto novamente.'
+  help player header: '<yellow>Ajuda com mochilas:'
+  help admin header: '<dark_red>Ajuda administrativa com mochilas:'
+  help registers header: '<gold>Lista de registros para este id:'
+  help registers format: ' <click:suggest_command:"/ubackpack open %uid%"><hover:show_text:"<green>Clique para abrir."><white>ID#: <aqua>%uid% <gray>| <white>Tipo: %type%</hover></click>'
+  help empty list: ' <red>- Nada por aqui'
+  help admin header list: '<yellow>lista de mochilas:'
+  registering item: '%tag% <green>Aguarde 1 segundo, sua nova mochila esta sendo registrada!'
+  noowner virtual item: '%tag% <red>Este item somente pode ser aberto pelo dono.!'
+  gui error: '%tag% <red>Este menu contem erros e nãoi pode ser aberto'
+  bag limit: '%tag% <red>Este é seu limite atual de mochilas!'
+  bag limit gui: <red>Este é o limite!
+  debited money: '%tag% <green>$%value% foi debitado de sua conta!'
+  need money gui: <red>Você precisa de <green>$%value% <red>para isto!
+  error upgrade gui: <red>Algum erro ocorreu!
+  success upgrade gui: <green>Sucesso nas compras!
+  success togggle gui: <green>Alterado com sucesso!
+  success sell gui: <aqua>%amount% <dark_gray>vendido por <green>$%price%
+  success sell: '%tag% <green>Você vendeu <aqua>%amount% <green>items e recebeu <green>$%price%'
+  error sell gui: <red>Um erro ocorreu.
+  error sell: '%tag% <red>Ocorreu um erro ao vender os itens.'
+  'no': <red>Não
+  'yes': <green>Sim
+  'false': <red>Desativado
+  'true': <green>Ativado
+  disabled function: '%tag% <red>Esta função parece estar desativada.'
+  disabled region command: '%tag% <red>Este comando não pode ser usado neste mundo.'
+  disabled world command: '%tag% <red>Este comando não pode ser usado nesta região.'
+  disabled region this: '%tag% <red>Isto não pode ser usado neste mundo.'
+  disabled world this: '%tag% <red>Isto não pode ser usado nesta região.'
+  register not found: '%tag% <red>Nenhuma mochila virtual ou física foi encontrada com este id'
+  inventory in edition: '%tag% <red>Sua mochila está sendo editada por um administrador e não pode ser aberta agora.'
+  recipe not found: '%tag% <red>Nenhuma mochila com este nome foi encontrada.'
+  recipe received: '%tag% <green>VocÊ recebeu <aqua>%amount% <green>mochilas de <aqua>%backpack_name%'
+  #Use '' to turn off this message.
+  sended to backpack: <aqua>%amount% <yellow>items foram enviados para <aqua>%backpack_name%
+  chest error save drop: '%tag% <red>Um ou mais itens parecem inválidos e não puderam ser salvos no baú, os itens foram descartados!'
+ 
+GUI:
+  General loading title: <yellow>Carregando...
+  General loading items fill name: ' '
+  General loading items fill2 name: ' '
+  General crafting_item title: <yellow>Criando items
+  General crafting_item items fill name: ' '
+  General crafting_item items fill2 name: ' '
+  General crafting_item items back name: ' <red>Voltar'
+  General crafting_item items back lore:
+  - ''
+  - ' <red>Clique para voltar.'
+  General crafting_item items craft name: <green>Junte os items!
+  General crafting_item items craft lore:
+  - ''
+  - ' <yellow>Monte os itens na mesa de trabalho'
+  General crafting_list title: <yellow>Lista de criação
+  General crafting_list items fill name: ''
+  General crafting_list items next name: ' <green>Próxima página.'
+  General crafting_list items next lore:
+  - ''
+  - ' <yellow>Clique para ir.'
+  General crafting_list items previous name: ' <green>Página anterior.'
+  General crafting_list items previous lore:
+  - ''
+  - ' <yellow>Clique para voltar.'
+  General crafting_list items back name: ' <red>Voltar'
+  General crafting_list items back lore:
+  - ''
+  - ' <red>Clique para voltar.'
+  General crafting_list items show name: ' <yellow>Sobre: %backpack_name%'
+  General crafting_list items show lore:
+  - ''
+  - ' <yellow>Informações da mochila:'
+  - ' <white>Paginas: <green>%backpack_pages%'
+  - ' <white>Linhas: <green>%backpack_lines%'
+  - ' <white>Upgrade máximo: <green>%backpack_maxupgrade%'
+  - ' <white>Tem permissão? %need_permission% <dark_gray>(%backpack_permission%)'
+  - ''
+  - ' <yellow>Clique para ver a criação.'
+  General general_home title: <yellow>Menu principal das mochilas.
+  General general_home items fill name: ' '
+  General general_home items virtual name: ' <green>Mochila Virtual'
+  General general_home items virtual lore:
+  - ''
+  - ' <white>Tem permissão: %need_permission%'
+  - ' <white>Permissão: <dark_gray>%backpack_permission%'
+  - ''
+  - ' <yellow>Clique para abrir.'
+  General general_home items craft name: ' <green>Lista de criação'
+  General general_home items craft lore:
+  - ''
+  - ' <yellow>Clique para abrir'
+  General general_home items help name: ' <green>Comandos'
+  General general_home items help lore:
+  - ''
+  - ' <yellow>Clique para ver'
+  General sell_backpack title: <yellow>Vender items.
+  General sell_backpack items fill name: ' '
+  General sell_backpack items next name: ' <green>Próxima página.'
+  General sell_backpack items next lore: [
+    ]
+  General sell_backpack items previous name: ' <green>Página anterior.'
+  General sell_backpack items previous lore: [
+    ]
+  General sell_backpack items sellinfo name: ' <green>Informações de venda'
+  General sell_backpack items sellinfo lore:
+  - ''
+  - ' <yellow>Informações:'
+  - ''
+  - ' <white>Total de items: <aqua>%amount%'
+  - ' <white>Loja: <aqua>%shop% <dark_gray>(%plugin%)'
+  - ' <white>Preço: <green>$%price%'
+  General sell_backpack items confirm name: ' <green>CONFIRMAR'
+  General sell_backpack items confirm lore:
+  - ''
+  - ' <yellow>Clique para confirmar.'
+  General sell_backpack items cancel name: ' <red>CANCELAR'
+  General sell_backpack items cancel lore:
+  - ' '
+  - ' <red>Clique para voltar'
+  General sell_backpack items cancel_error name: ' <red>Cancelar'
+  General sell_backpack items cancel_error lore:
+  - ' '
+  - ' <red>Algum erro aconteceu, talvez você'
+  - <red>não tenha itens para vender ou lojas ativas
+  - ''
+  - ' <red>Clique para voltar'
+  General upgrade_backpack title: <yellow>Upgrade para o level <aqua>%level%<yellow>?
+  General upgrade_backpack items fill name: ' '
+  General upgrade_backpack items confirm name: ' <green>CONFIRMAR'
+  General upgrade_backpack items confirm lore:
+  - ''
+  - ' <white>Atual: <aqua>%current_level%'
+  - ' <white>Próximo: <aqua>%next_level%'
+  - ' <white>Preço: <green>$%current_value%'
+  - ' '
+  - ' <yellow>Clique para comprar'
+  General upgrade_backpack items cancel name: ' <red>CANCELAR'
+  General upgrade_backpack items cancel lore:
+  - ' '
+  - ' <red>Clique para voltar'
+  General settings_backpack title: <yellow>Configurações
+  General settings_backpack items fill name: ' '
+  General settings_backpack items fill lore: [
+    ]
+  General settings_backpack items back name: ' <green>Voltar'
+  General settings_backpack items back lore:
+  - ''
+  - ' <yellow>Clique para voltar.'
+  General settings_backpack items pickup name: ' <green>Coleta automática?'
+  General settings_backpack items pickup lore:
+  - ''
+  - ' <white>Estado: <green>%auto_pickup%'
+  - ' <yellow>Clique para alterar.'
+  General settings_backpack items smelting name: ' <green>Fundição automática?'
+  General settings_backpack items smelting lore:
+  - ''
+  - ' <white>Estado: <green>%auto_smelting%'
+  - ' <yellow>Clique para alterar.'
+  General settings_backpack items blocks name: ' <green>Blocos automáticos?'
+  General settings_backpack items blocks lore:
+  - ''
+  - ' <white>Estado: <green>%auto_blocks%'
+  - ' <yellow>Clique para alterar.'
+  General settings_backpack items sell name: ' <green>Auto vender?'
+  General settings_backpack items sell lore:
+  - ''
+  - ' <white>Estado: <green>%auto_sell%'
+  - ' <yellow>Quando ligada a mochila vende'
+  - <yellow>os itens quando você vende seu inventário
+  - ''
+  - ' <yellow>Clique para alterar.'
+  General backpack title: <yellow>%backpack_name% <dark_gray>[%page%/%pages%]
+  General backpack items fill name: ' '
+  General backpack items fill lore: [
+    ]
+  General backpack items next name: ' <green>Próxima página.'
+  General backpack items next lore: [
+    ]
+  General backpack items previous name: ' <green>Página anterior.'
+  General backpack items previous lore: [
+    ]
+  General backpack items sell name: ' <green>Vender items'
+  General backpack items sell lore:
+  - ''
+  - ' <yellow>Clique para vender'
+  General backpack items upgrade name: ' <green>Upgrade'
+  General backpack items upgrade lore:
+  - ''
+  - ' <white>Atual: <aqua>%current_level%'
+  - ' <white>Próximo: <aqua>%next_level%'
+  - ' <white>Preço: <green>$%current_value%'
+  - ' '
+  - ' <yellow>Clique para vender'
+  General backpack items maxlevel name: ' <red>Level máximo'
+  General backpack items maxlevel lore:
+  - ''
+  - ' <white>Atual: <aqua>%current_level%'
+  General backpack items order name: ' <green>Auto-organizar'
+  General backpack items order lore:
+  - ''
+  - ' <yellow>Isso agrupará os itens e'
+  - <yellow>os colocará em ordem.
+  General backpack items settings name: ' <green>Configurações'
+  General backpack items settings lore:
+  - ''
+  - <yellow>Clique para abrir.
+  General backpack items back name: ' <green>Mochila virtual início'
+  General backpack items back lore:
+  - ''
+  - ' <yellow>Clique para ir para a página inicial da'
+  - <yellow>mochila virtual.
+  General message title: ''
+  General message items fill name: ' '
+  General message items fill lore: [
+    ]
+COMMANDS:
+  backpack help show on_help: ' <gold>/backpack help <gray>-<yellow> Mostra o menu de ajuda '
+  backpack help show on_help_json hover_text: '<green>Clique para ver a ajuda das mochilas '
+  backpack help show on_success: '%tag% <green>Success!'
+  backpack help show on_error: '%tag%<red>Erro ao mostrar o texto'
+  backpack help show on_usage: '%tag% <gold>Use <aqua>/backpack help'
+  backpack virtual show on_help: ' <gold>/backpack virtual <gray>-<yellow> Abrir a mochila virtual '
+  backpack virtual show on_help_json hover_text: <green>Clique para abrir a mochilaa virtual.
+  backpack virtual show on_success: '%tag% <green>Sucesso!'
+  backpack virtual show on_error: '%tag%<red>Ocorreu um erro ao abrir '
+  backpack virtual show on_usage: '%tag% <red>Use <gold>/backpack virtual'
+  backpack home show on_help: ' <gold>/backpack home <gray>-<yellow> Abrir o menu inicial '
+  backpack home show on_help_json hover_text: '<green>Clique para abrir o menu inicial '
+  backpack home show on_success: '%tag% <green>Sucesso!'
+  backpack home show on_error: '%tag%<red>Erro ao abrir'
+  backpack home show on_usage: '%tag% <red>Use <gold>/backpack home'
+  backpack crafts show on_help: ' <gold>/backpack crafts <gray>-<yellow> Abrir a lista de criação'
+  backpack crafts show on_help_json hover_text: <green>Clique para abrir a lista de criação
+  backpack crafts show on_success: '%tag% <green>Sucesso!'
+  backpack crafts show on_error: '%tag%<red>Erro ao abrir '
+  backpack crafts show on_usage: '%tag% <red>Use <gold>/backpack crafts'
+  ubackpack help show on_help: ' <dark_red>/ubackpack help <gray>-<yellow> mostra o menu de ajuda '
+  ubackpack help show on_help_json hover_text: '<green>Clique para ver a ajuda das mochilas '
+  ubackpack help show on_success: '%tag% <green>Sucesso '
+  ubackpack help show on_error: '%tag% <red>Erro ao mostrar a ajuda'
+  ubackpack help show on_usage: '%tag% <red>Error use <aqua>/ubackpack help'
+  ubackpack reload show on_help: ' <dark_red>/ubackpack reload <gray>-<yellow> Recarregar as configurações'
+  ubackpack reload show on_help_json hover_text: '<green>Clique para recarregar as configurações '
+  ubackpack reload show on_success: '%tag% <green>Recarregado com sucesso!'
+  ubackpack reload show on_error: '%tag%<red>Ocorreu um erro ao recarregar as configurações'
+  ubackpack reload show on_usage: '%tag% <red>Use <dark_red>/ubackpack reload'
+  ubackpack open show on_help: ' <dark_red>/ubackpack open <red><UUID<gray>|<dark_red>NICKNAME<gray>|<dark_red>ID> <gray>-<yellow> Abre as mochilas virtuais ou físicas'
+  ubackpack open show on_help_json hover_text: <green>Clique para abrir as mochilas
+  ubackpack open show on_success: '%tag% <green>Sucesso!'
+  ubackpack open show on_error: '%tag%<red>Ocorreu um erro ao abrir '
+  ubackpack open show on_usage: '%tag% <red>Use <dark_red>/ubackpack open <UUID<gray>|<dark_red>NICKNAME<gray>|<dark_red>ID>'
+  ubackpack list show on_help: ' <dark_red>/ubackpack list <gray>-<yellow> Lista todas as mochilas'
+  ubackpack list show on_help_json hover_text: <green>CLique para ver a lista de mochilas
+  ubackpack list show on_success: '%tag% <green>Sucesso!'
+  ubackpack list show on_error: '%tag%<red>Ocorreu um erro ao listar a mochilas '
+  ubackpack list show on_usage: '%tag% <red>Use <dark_red>/ubackpack list'
+  ubackpack give show on_help: ' <dark_red>/ubackpack give <red><player> <backpack> <amount> <gray>-<yellow> Envia uma mochila a um jogador'
+  ubackpack give show on_help_json hover_text: <green>Clique para enviar uma mochila
+  ubackpack give show on_success: '%tag% <green>Você enviou <aqua>%amount% <green>mochila(s) <aqua>%backpack_name% <green>para <aqua>%player%'
+  ubackpack give show on_error: '%tag%<red>Ocorreu um erro ao enviar a mochila'
+  ubackpack give show on_usage: '%tag% <red>Use <dark_red>/ubackpack give <player> <backpack> <amount>'
+  ubackpack registers show on_help: ' <dark_red>/ubackpack registers <red><UUID<gray>|<dark_red>PLAYER<red> <gray>-<yellow> Lista as mochilas registradas ao jogador'
+  ubackpack registers show on_help_json hover_text: <green>Clique para listar os registros.
+  ubackpack registers show on_success: '%tag% <green>Sucesso ao exibir.'
+  ubackpack registers show on_error: '%tag%<red>Ocorreu um erro ao listar as mochilas do jogador.'
+  ubackpack registers show on_usage: '%tag% <red>Use <dark_red>/ubackpack registers <red><UUID<gray>|<red>PLAYER<red>>'
