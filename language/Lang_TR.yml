@@ -78,7 +78,7 @@ GUI:
   - ' <white>Yetki durumu: %need_permission% <dark_gray>(%backpack_permission%)'
   - ''
   - ' <yellow>Üretimini görüntülemek için tıklayın'
-  General general_home title: <yellow>Home backpack Menu.
+  General general_home title: <yellow>Sırt Çantası Ana Menüsü.
   General general_home items fill name: ' '
   General general_home items virtual name: ' <green>Sanal Sırt Çantası'
   General general_home items virtual lore:
