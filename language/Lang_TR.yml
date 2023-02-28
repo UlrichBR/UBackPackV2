@@ -1,0 +1,262 @@
+ 
+LANGUAGE:
+  command by player: '%tag% <red>This command must be used by a player.'
+  plaer not found: '%tag% <red>Player not found!'
+  no permission: '%tag% <red>You do not have permission'
+  separer: <gradient:gold:yellow>████████████████████████████████
+  command in cooldown: '%tag% <red>Wait for <aqua>%sec% <red>to use this command again.'
+  help player header: '<yellow>BackPack Help:'
+  help admin header: '<dark_red>Admin BackPack Help:'
+  help empty list: ' <red>- Nothing here'
+  help admin header list: '<yellow>Backpacks list:'
+  registering item: '%tag% <green>Wait 1 second, your new BackPack is being registered!'
+  gui error: '%tag% <red>This menu contains an error and cannot be opened'
+  bag limit: '%tag% <red>This is the limit!'
+  bag limit gui: <red>This is the limit!
+  debited money: '%tag% <green>$%value% has been debited from your account!'
+  need money gui: <red>Need <green>$%value% <red>for this!
+  error upgrade gui: <red>An error has occurred!
+  success upgrade gui: <green>Success when shopping!
+  success togggle gui: <green>Success changed!
+  success sell gui: <aqua>%amount% <dark_gray>sold for <green>$%price%
+  success sell: '%tag% <green>You sold <aqua>%amount% <green>items and received <green>$%price%'
+  error sell gui: <red>An error has occurred.
+  error sell: '%tag% <red>An error occurred when selling the items.'
+  'no': <red>No
+  'yes': <green>Yes
+  'false': <red>Disabled
+  'true': <green>Enabled
+  disabled function: '%tag% <red>This function appears to be disabled.'
+  disabled region command: '%tag% <red>This command cannot be used in this world.'
+  disabled world command: '%tag% <red>This command cannot be used in this region.'
+  disabled region this: '%tag% <red>It cannot be used in this world.'
+  disabled world this: '%tag% <red>It cannot be used in this region.'
+  register not found: '%tag% <red>No virtual or physical backpack was found with this id'
+  inventory in edition: '%tag% <red>Your backpack is being edited by an admin and cannot be opened now.'
+  recipe not found: '%tag% <red>No backpack with this name was found.'
+  recipe received: '%tag% <green>You have received <aqua>%amount% <green>backpacks of <aqua>%backpack_name%'
+  #Use '' to turn off this message.
+  sended to backpack: <aqua>%amount% <yellow>items have been sent to the <aqua>%backpack_name%
+  chest error save drop: '%tag% <red>One or more items appear invalid and could not be saved in the chest, the items have been dropped!'
+ 
+GUI:
+  General loading title: <yellow>Loading  .
+  General loading items fill name: ' '
+  General loading items fill2 name: ' '
+  General crafting_item title: <yellow>Crafting Item
+  General crafting_item items fill name: ' '
+  General crafting_item items fill2 name: ' '
+  General crafting_item items back name: ' <red>Go Back'
+  General crafting_item items back lore:
+  - ''
+  - ' <red>Click to go Back.'
+  General crafting_item items craft name: <green>Assemble the items!
+  General crafting_item items craft lore:
+  - ''
+  - ' <yellow>Assemble the items on the craftingtable'
+  General crafting_list title: <yellow>Crafting List
+  General crafting_list items fill name: ''
+  General crafting_list items next name: ' <green>Next page.'
+  General crafting_list items next lore:
+  - ''
+  - ' <yellow>Click to next.'
+  General crafting_list items previous name: ' <green>Previous page.'
+  General crafting_list items previous lore:
+  - ''
+  - ' <yellow>Click to previous.'
+  General crafting_list items back name: ' <red>Go Back'
+  General crafting_list items back lore:
+  - ''
+  - ' <red>Click to go Back.'
+  General crafting_list items show name: ' <yellow>About: %backpack_name%'
+  General crafting_list items show lore:
+  - ''
+  - ' <yellow>Backpack Info:'
+  - ' <white>Pages: <green>%backpack_pages%'
+  - ' <white>Lines: <green>%backpack_lines%'
+  - ' <white>Max upgrade: <green>%backpack_maxupgrade%'
+  - ' <white>Have permission: %need_permission% <dark_gray>(%backpack_permission%)'
+  - ''
+  - ' <yellow>Click to view Craft'
+  General general_home title: <yellow>Home backpack Menu.
+  General general_home items fill name: ' '
+  General general_home items virtual name: ' <green>Virtual Backpack'
+  General general_home items virtual lore:
+  - ''
+  - ' <white>Have permission: %need_permission%'
+  - ' <white>Permission: <dark_gray>%backpack_permission%'
+  - ''
+  - ' <yellow>Click to Open.'
+  General general_home items craft name: ' <green>Crafting List'
+  General general_home items craft lore:
+  - ''
+  - ' <yellow>Click to Open'
+  General general_home items help name: ' <green>Commands'
+  General general_home items help lore:
+  - ''
+  - ' <yellow>Click to Show'
+  General sell_backpack title: <yellow>Sell Items.
+  General sell_backpack items fill name: ' '
+  General sell_backpack items next name: ' <green>Next page.'
+  General sell_backpack items next lore: [
+    ]
+  General sell_backpack items previous name: ' <green>Previous page.'
+  General sell_backpack items previous lore: [
+    ]
+  General sell_backpack items sellinfo name: ' <green>Sales information'
+  General sell_backpack items sellinfo lore:
+  - ''
+  - ' <yellow>Information:'
+  - ''
+  - ' <white>Total items: <aqua>%amount%'
+  - ' <white>Shop: <aqua>%shop% <dark_gray>(%plugin%)'
+  - ' <white>Price: <green>$%price%'
+  General sell_backpack items confirm name: ' <green>CONFIRM'
+  General sell_backpack items confirm lore:
+  - ''
+  - ' <yellow>Click to confirm.'
+  General sell_backpack items cancel name: ' <red>CANCEL'
+  General sell_backpack items cancel lore:
+  - ' '
+  - ' <red>Click to go back'
+  General sell_backpack items cancel_error name: ' <red>Cancel'
+  General sell_backpack items cancel_error lore:
+  - ' '
+  - ' <red>Some error happened, maybe you'
+  - '<red>dont have items to sell or stores active '
+  - ''
+  - ' <red>Click to go back'
+  General upgrade_backpack title: <yellow>Upgrade to level <aqua>%level%<yellow>?
+  General upgrade_backpack items fill name: ' '
+  General upgrade_backpack items confirm name: ' <green>CONFIRM'
+  General upgrade_backpack items confirm lore:
+  - ''
+  - ' <white>Current: <aqua>%current_level%'
+  - ' <white>Next: <aqua>%next_level%'
+  - ' <white>Price: <green>$%current_value%'
+  - ' '
+  - ' <yellow>Click to Buy'
+  General upgrade_backpack items cancel name: ' <red>CANCEL'
+  General upgrade_backpack items cancel lore:
+  - ' '
+  - ' <red>Click to go back'
+  General settings_backpack title: <yellow>Settings
+  General settings_backpack items fill name: ' '
+  General settings_backpack items fill lore: [
+    ]
+  General settings_backpack items back name: ' <green>Back'
+  General settings_backpack items back lore:
+  - ''
+  - ' <yellow>Click to go back.'
+  General settings_backpack items pickup name: ' <green>Auto Pickup?'
+  General settings_backpack items pickup lore:
+  - ''
+  - ' <white>State: <green>%auto_pickup%'
+  - ' <yellow>Click to Change.'
+  General settings_backpack items smelting name: ' <green>Auto Smelting?'
+  General settings_backpack items smelting lore:
+  - ''
+  - ' <white>State: <green>%auto_smelting%'
+  - ' <yellow>Click to Change.'
+  General settings_backpack items blocks name: ' <green>Auto Blocks?'
+  General settings_backpack items blocks lore:
+  - ''
+  - ' <white>State: <green>%auto_blocks%'
+  - ' <yellow>Click to Change.'
+  General settings_backpack items sell name: ' <green>Auto Sell?'
+  General settings_backpack items sell lore:
+  - ''
+  - ' <white>State: <green>%auto_sell%'
+  - ' <yellow>When turned on the backpack sells'
+  - <yellow>the items when you sell your inventory
+  - ''
+  - ' <yellow>Click to Change.'
+  General backpack title: <yellow>%backpack_name% <dark_gray>[%page%/%pages%]
+  General backpack items fill name: ' '
+  General backpack items fill lore: [
+    ]
+  General backpack items next name: ' <green>Next Page.'
+  General backpack items next lore: [
+    ]
+  General backpack items previous name: ' <green>Previous Page.'
+  General backpack items previous lore: [
+    ]
+  General backpack items sell name: ' <green>Sell items'
+  General backpack items sell lore:
+  - ''
+  - ' <yellow>Click to Sell'
+  General backpack items upgrade name: ' <green>Upgrade'
+  General backpack items upgrade lore:
+  - ''
+  - ' <white>Current: <aqua>%current_level%'
+  - ' <white>Next: <aqua>%next_level%'
+  - ' <white>Price: <green>$%current_value%'
+  - ' '
+  - ' <yellow>Click to Buy'
+  General backpack items maxlevel name: ' <red>Maximum level'
+  General backpack items maxlevel lore:
+  - ''
+  - ' <white>Current: <aqua>%current_level%'
+  General backpack items order name: ' <green>Self organize'
+  General backpack items order lore:
+  - ''
+  - ' <yellow>This will group the items and'
+  - <yellow>place them in order.
+  General backpack items settings name: ' <green>Settings'
+  General backpack items settings lore:
+  - ''
+  - <yellow>Click to open.
+  General backpack items back name: ' <green>Virtual Backpack home'
+  General backpack items back lore:
+  - ''
+  - <yellow>Click to go to virtual backpack home.
+  General message title: ''
+  General message items fill name: ' '
+  General message items fill lore: [
+    ]
+COMMANDS:
+  backpack help show on_help: ' <gold>/backpack help <gray>-<yellow> Show help menu '
+  backpack help show on_help_json hover_text: '<green>Click to view help of BackPacks '
+  backpack help show on_success: '%tag% <green>You are seeing the help!'
+  backpack help show on_error: '%tag%<red>Error to show text '
+  backpack help show on_usage: '%tag% <gold>Use <aqua>/backpack help'
+  backpack virtual show on_help: ' <gold>/backpack virtual <gray>-<yellow> Open virtual BackPack '
+  backpack virtual show on_help_json hover_text: <green>Click to open a virtual BackPack.
+  backpack virtual show on_success: '%tag% <green>You are seeing the virtual!'
+  backpack virtual show on_error: '%tag%<red>Error to open '
+  backpack virtual show on_usage: '%tag% <red>Use <gold>/backpack virtual'
+  backpack home show on_help: ' <gold>/backpack home <gray>-<yellow> Open home BackPack '
+  backpack home show on_help_json hover_text: '<green>Click to open a home BackPack '
+  backpack home show on_success: '%tag% <green>You are seeing the home!'
+  backpack home show on_error: '%tag%<red>Error to open '
+  backpack home show on_usage: '%tag% <red>Use <gold>/backpack home'
+  backpack crafts show on_help: ' <gold>/backpack crafts <gray>-<yellow> Open crafts list '
+  backpack crafts show on_help_json hover_text: '<green>Click to open a crafts list '
+  backpack crafts show on_success: '%tag% <green>You are seeing the crafts!'
+  backpack crafts show on_error: '%tag%<red>Error to open '
+  backpack crafts show on_usage: '%tag% <red>Use <gold>/backpack crafts'
+  ubackpack help show on_help: ' <dark_red>/ubackpack help <gray>-<yellow> Show help menu '
+  ubackpack help show on_help_json hover_text: '<green>Click to view help of BackPacks '
+  ubackpack help show on_success: '%tag% <green>Success to use help '
+  ubackpack help show on_error: '%tag% <red>Error to use help'
+  ubackpack help show on_usage: '%tag% <red>Error use <aqua>/ubackpack help'
+  ubackpack reload show on_help: ' <dark_red>/ubackpack reload <gray>-<yellow> Reload settings'
+  ubackpack reload show on_help_json hover_text: '<green>Click to Reload settings '
+  ubackpack reload show on_success: '%tag% <green>Successfully recharged!'
+  ubackpack reload show on_error: '%tag%<red>An error occurred when reloading the files'
+  ubackpack reload show on_usage: '%tag% <red>Use <dark_red>/ubackpack reload'
+  ubackpack open show on_help: ' <dark_red>/ubackpack open <UUID<gray>|<dark_red>NICKNAME<gray>|<dark_red>ID> <gray>-<yellow> Open a virtual or physical backpack'
+  ubackpack open show on_help_json hover_text: <green>Click to open a virtual or physical backpack
+  ubackpack open show on_success: '%tag% <green>Successfully!'
+  ubackpack open show on_error: '%tag%<red>An error occurred when opening '
+  ubackpack open show on_usage: '%tag% <red>Use <dark_red>/ubackpack open <UUID<gray>|<dark_red>NICKNAME<gray>|<dark_red>ID>'
+  ubackpack list show on_help: ' <dark_red>/ubackpack list <gray>-<yellow> List all Backpacks'
+  ubackpack list show on_help_json hover_text: <green>Click to list a players backpack
+  ubackpack list show on_success: '%tag% <green>Successfully!'
+  ubackpack list show on_error: '%tag%<red>An error occurred when listing '
+  ubackpack list show on_usage: '%tag% <red>Use <dark_red>/ubackpack list'
+  ubackpack give show on_help: ' <dark_red>/ubackpack give <player> <backpack> <amount> <gray>-<yellow> Give a backpack to a player'
+  ubackpack give show on_help_json hover_text: <green>Click to give a players to a backpack
+  ubackpack give show on_success: '%tag% <green>You have sent <aqua>%amount% <green>backpack <aqua>%backpack_name% <green>to <aqua>%player%'
+  ubackpack give show on_error: '%tag%<red>An error occurred when giveing '
+  ubackpack give show on_usage: '%tag% <red>Use <dark_red>/ubackpack give <player> <backpack> <amount>'
