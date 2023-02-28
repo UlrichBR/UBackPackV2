@@ -1,262 +1,262 @@
  
 LANGUAGE:
-  command by player: '%tag% <red>This command must be used by a player.'
-  plaer not found: '%tag% <red>Player not found!'
-  no permission: '%tag% <red>You do not have permission'
+  command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır.'
+  plaer not found: '%tag% <red>Oyuncu bulunamadı!'
+  no permission: '%tag% <red>İzniniz yok'
   separer: <gradient:gold:yellow>████████████████████████████████
-  command in cooldown: '%tag% <red>Wait for <aqua>%sec% <red>to use this command again.'
-  help player header: '<yellow>BackPack Help:'
-  help admin header: '<dark_red>Admin BackPack Help:'
-  help empty list: ' <red>- Nothing here'
-  help admin header list: '<yellow>Backpacks list:'
-  registering item: '%tag% <green>Wait 1 second, your new BackPack is being registered!'
-  gui error: '%tag% <red>This menu contains an error and cannot be opened'
-  bag limit: '%tag% <red>This is the limit!'
-  bag limit gui: <red>This is the limit!
-  debited money: '%tag% <green>$%value% has been debited from your account!'
-  need money gui: <red>Need <green>$%value% <red>for this!
-  error upgrade gui: <red>An error has occurred!
-  success upgrade gui: <green>Success when shopping!
-  success togggle gui: <green>Success changed!
-  success sell gui: <aqua>%amount% <dark_gray>sold for <green>$%price%
-  success sell: '%tag% <green>You sold <aqua>%amount% <green>items and received <green>$%price%'
-  error sell gui: <red>An error has occurred.
-  error sell: '%tag% <red>An error occurred when selling the items.'
-  'no': <red>No
-  'yes': <green>Yes
-  'false': <red>Disabled
-  'true': <green>Enabled
-  disabled function: '%tag% <red>This function appears to be disabled.'
-  disabled region command: '%tag% <red>This command cannot be used in this world.'
-  disabled world command: '%tag% <red>This command cannot be used in this region.'
-  disabled region this: '%tag% <red>It cannot be used in this world.'
-  disabled world this: '%tag% <red>It cannot be used in this region.'
-  register not found: '%tag% <red>No virtual or physical backpack was found with this id'
-  inventory in edition: '%tag% <red>Your backpack is being edited by an admin and cannot be opened now.'
-  recipe not found: '%tag% <red>No backpack with this name was found.'
-  recipe received: '%tag% <green>You have received <aqua>%amount% <green>backpacks of <aqua>%backpack_name%'
+  command in cooldown: '%tag% <red>Bu komutu tekrar kullanmak için <aqua>%sec% <red>bekleyin.'
+  help player header: '<yellow>Sırt Çantası Yardım:'
+  help admin header: '<dark_red>Admin Sırt Çantası Yardım:'
+  help empty list: ' <red>- Burada hiçbir şey yok'
+  help admin header list: '<yellow>Sırt çantası listesi:'
+  registering item: '%tag% <green>1 saniye bekleyin, yeni Sırt Çantanız kaydediliyor!'
+  gui error: '%tag% <red>Bu menü bir hata içeriyor ve açılamıyor'
+  bag limit: '%tag% <red>Bu sınır!'
+  bag limit gui: <red>Bu sınır!
+  debited money: '%tag% <green>$%value% hesabınızdan çekildi!'
+  need money gui: <red>Bunun için <green>$%value% <red> gerekiyor!
+  error upgrade gui: <red>Bir hata oluştu!
+  success upgrade gui: <green>Alışveriş başarılı!
+  success togggle gui: <green>Başarıyla değişti!
+  success sell gui: <aqua>%amount% <green>$%price% <dark_gray>karşılığında satıldı
+  success sell: '%tag% <aqua>%amount% <green>eşya sattınız ve <green>$%price% <green>aldınız'
+  error sell gui: <red>Bir hata oluştu.
+  error sell: '%tag% <red>Eşyaları satarken bir hata oluştu.'
+  'no': <red>Hayır
+  'yes': <green>Evet
+  'false': <red>Devredışı
+  'true': <green>Etkin
+  disabled function: '%tag% <red>Bu işlev devre dışı görünüyor.'
+  disabled region command: '%tag% <red>Bu komut bu dünyada kullanılamaz.'
+  disabled world command: '%tag% <red>Bu komut bu bölgede kullanılamaz.'
+  disabled region this: '%tag% <red>Bu dünyada kullanılamaz.'
+  disabled world this: '%tag% <red>Bu bölgede kullanılamaz.'
+  register not found: '%tag% <red>Bu kimliğe sahip hiçbir sanal veya fiziksel sırt çantası bulunamadı'
+  inventory in edition: '%tag% <red>Sırt çantanız bir yönetici tarafından düzenleniyor ve şu anda açılamıyor.'
+  recipe not found: '%tag% <red>Bu isimde bir sırt çantası bulunamadı.'
+  recipe received: '%tag% <aqua>%backpack_name% <green>sırt çantasından <aqua>%amount% <green>adet aldın'
   #Use '' to turn off this message.
-  sended to backpack: <aqua>%amount% <yellow>items have been sent to the <aqua>%backpack_name%
-  chest error save drop: '%tag% <red>One or more items appear invalid and could not be saved in the chest, the items have been dropped!'
+  sended to backpack: <aqua>%amount% <yellow>eşya <aqua>%backpack_name% adresine gönderildi
+  chest error save drop: '%tag% <red>Bir veya daha fazla eşya geçersiz görünüyor ve sandığa kaydedilemedi, eşyalar düştü!'
  
 GUI:
-  General loading title: <yellow>Loading  .
+  General loading title: <yellow>Yükleniyor  .
   General loading items fill name: ' '
   General loading items fill2 name: ' '
-  General crafting_item title: <yellow>Crafting Item
+  General crafting_item title: <yellow>Üretim Eşyası
   General crafting_item items fill name: ' '
   General crafting_item items fill2 name: ' '
-  General crafting_item items back name: ' <red>Go Back'
+  General crafting_item items back name: ' <red>Geri Git'
   General crafting_item items back lore:
   - ''
-  - ' <red>Click to go Back.'
-  General crafting_item items craft name: <green>Assemble the items!
+  - ' <red>Geri gitmek için tıklayın.'
+  General crafting_item items craft name: <green>Eşyaları birleştirin!
   General crafting_item items craft lore:
   - ''
-  - ' <yellow>Assemble the items on the craftingtable'
-  General crafting_list title: <yellow>Crafting List
+  - ' <yellow>Üretim masasındaki eşyaları birleştirin'
+  General crafting_list title: <yellow>Üretim Listesi
   General crafting_list items fill name: ''
-  General crafting_list items next name: ' <green>Next page.'
+  General crafting_list items next name: ' <green>Sonraki sayfa.'
   General crafting_list items next lore:
   - ''
-  - ' <yellow>Click to next.'
-  General crafting_list items previous name: ' <green>Previous page.'
+  - ' <yellow>Sonraki için tıklayın.'
+  General crafting_list items previous name: ' <green>Önceki sayfa.'
   General crafting_list items previous lore:
   - ''
-  - ' <yellow>Click to previous.'
-  General crafting_list items back name: ' <red>Go Back'
+  - ' <yellow>Önceki için tıklayın.'
+  General crafting_list items back name: ' <red>Geri Git'
   General crafting_list items back lore:
   - ''
-  - ' <red>Click to go Back.'
-  General crafting_list items show name: ' <yellow>About: %backpack_name%'
+  - ' <red>Geri gitmek için tıklayın.'
+  General crafting_list items show name: ' <yellow>Hakkında: %backpack_name%'
   General crafting_list items show lore:
   - ''
-  - ' <yellow>Backpack Info:'
-  - ' <white>Pages: <green>%backpack_pages%'
-  - ' <white>Lines: <green>%backpack_lines%'
-  - ' <white>Max upgrade: <green>%backpack_maxupgrade%'
-  - ' <white>Have permission: %need_permission% <dark_gray>(%backpack_permission%)'
+  - ' <yellow>Sırt Çantası Bilgisi:'
+  - ' <white>Sayfalar: <green>%backpack_pages%'
+  - ' <white>Satırlar: <green>%backpack_lines%'
+  - ' <white>Max yükseltme: <green>%backpack_maxupgrade%'
+  - ' <white>Yetki durumu: %need_permission% <dark_gray>(%backpack_permission%)'
   - ''
-  - ' <yellow>Click to view Craft'
+  - ' <yellow>Üretimini görüntülemek için tıklayın'
   General general_home title: <yellow>Home backpack Menu.
   General general_home items fill name: ' '
-  General general_home items virtual name: ' <green>Virtual Backpack'
+  General general_home items virtual name: ' <green>Sanal Sırt Çantası'
   General general_home items virtual lore:
   - ''
-  - ' <white>Have permission: %need_permission%'
-  - ' <white>Permission: <dark_gray>%backpack_permission%'
+  - ' <white>Yetki durumu: %need_permission%'
+  - ' <white>Yetki: <dark_gray>%backpack_permission%'
   - ''
-  - ' <yellow>Click to Open.'
-  General general_home items craft name: ' <green>Crafting List'
+  - ' <yellow>Açmak için tıklayın.'
+  General general_home items craft name: ' <green>Üretim Listesi'
   General general_home items craft lore:
   - ''
-  - ' <yellow>Click to Open'
-  General general_home items help name: ' <green>Commands'
+  - ' <yellow>Açmak için tıklayın'
+  General general_home items help name: ' <green>Komutlar'
   General general_home items help lore:
   - ''
-  - ' <yellow>Click to Show'
-  General sell_backpack title: <yellow>Sell Items.
+  - ' <yellow>Göstermek için tıklayın'
+  General sell_backpack title: <yellow>Eşyaları Sat.
   General sell_backpack items fill name: ' '
-  General sell_backpack items next name: ' <green>Next page.'
+  General sell_backpack items next name: ' <green>Sonraki sayfa.'
   General sell_backpack items next lore: [
     ]
-  General sell_backpack items previous name: ' <green>Previous page.'
+  General sell_backpack items previous name: ' <green>Önceki sayfa.'
   General sell_backpack items previous lore: [
     ]
-  General sell_backpack items sellinfo name: ' <green>Sales information'
+  General sell_backpack items sellinfo name: ' <green>Satış bilgileri'
   General sell_backpack items sellinfo lore:
   - ''
-  - ' <yellow>Information:'
+  - ' <yellow>Bilgi:'
   - ''
-  - ' <white>Total items: <aqua>%amount%'
-  - ' <white>Shop: <aqua>%shop% <dark_gray>(%plugin%)'
-  - ' <white>Price: <green>$%price%'
-  General sell_backpack items confirm name: ' <green>CONFIRM'
+  - ' <white>Tüm eşyalar: <aqua>%amount%'
+  - ' <white>Market: <aqua>%shop% <dark_gray>(%plugin%)'
+  - ' <white>Fiyat: <green>$%price%'
+  General sell_backpack items confirm name: ' <green>ONAYLA'
   General sell_backpack items confirm lore:
   - ''
-  - ' <yellow>Click to confirm.'
-  General sell_backpack items cancel name: ' <red>CANCEL'
+  - ' <yellow>Onaylamak için tıklayın.'
+  General sell_backpack items cancel name: ' <red>İPTAL'
   General sell_backpack items cancel lore:
   - ' '
-  - ' <red>Click to go back'
-  General sell_backpack items cancel_error name: ' <red>Cancel'
+  - ' <red>Geri dönmek için tıklayın'
+  General sell_backpack items cancel_error name: ' <red>İptal'
   General sell_backpack items cancel_error lore:
   - ' '
-  - ' <red>Some error happened, maybe you'
-  - '<red>dont have items to sell or stores active '
+  - ' <red>Bir hata oluştu, satacak ürününüz'
+  - '<red>veya aktif mağazanız olmayabilir. '
   - ''
-  - ' <red>Click to go back'
-  General upgrade_backpack title: <yellow>Upgrade to level <aqua>%level%<yellow>?
+  - ' <red>Geri dönmek için tıklayın'
+  General upgrade_backpack title: <aqua>%level%<yellow> seviyeye yükseltin ?
   General upgrade_backpack items fill name: ' '
-  General upgrade_backpack items confirm name: ' <green>CONFIRM'
+  General upgrade_backpack items confirm name: ' <green>ONAYLA'
   General upgrade_backpack items confirm lore:
   - ''
-  - ' <white>Current: <aqua>%current_level%'
-  - ' <white>Next: <aqua>%next_level%'
-  - ' <white>Price: <green>$%current_value%'
+  - ' <white>Mevcut: <aqua>%current_level%'
+  - ' <white>Sonraki: <aqua>%next_level%'
+  - ' <white>Fiyat: <green>$%current_value%'
   - ' '
-  - ' <yellow>Click to Buy'
-  General upgrade_backpack items cancel name: ' <red>CANCEL'
+  - ' <yellow>Satın almak için tıkla'
+  General upgrade_backpack items cancel name: ' <red>İPTAL'
   General upgrade_backpack items cancel lore:
   - ' '
-  - ' <red>Click to go back'
-  General settings_backpack title: <yellow>Settings
+  - ' <red>Geri dönmek için tıklayın'
+  General settings_backpack title: <yellow>Ayarlar
   General settings_backpack items fill name: ' '
   General settings_backpack items fill lore: [
     ]
-  General settings_backpack items back name: ' <green>Back'
+  General settings_backpack items back name: ' <green>Geri'
   General settings_backpack items back lore:
   - ''
-  - ' <yellow>Click to go back.'
-  General settings_backpack items pickup name: ' <green>Auto Pickup?'
+  - ' <yellow>Geri dönmek için tıklayın.'
+  General settings_backpack items pickup name: ' <green>Otomatik Alım?'
   General settings_backpack items pickup lore:
   - ''
-  - ' <white>State: <green>%auto_pickup%'
-  - ' <yellow>Click to Change.'
-  General settings_backpack items smelting name: ' <green>Auto Smelting?'
+  - ' <white>Durum: <green>%auto_pickup%'
+  - ' <yellow>Değiştirmek için tıklayın.'
+  General settings_backpack items smelting name: ' <green>Otomatik Pişirme?'
   General settings_backpack items smelting lore:
   - ''
-  - ' <white>State: <green>%auto_smelting%'
-  - ' <yellow>Click to Change.'
-  General settings_backpack items blocks name: ' <green>Auto Blocks?'
+  - ' <white>Durum: <green>%auto_smelting%'
+  - ' <yellow>Değiştirmek için tıklayın.'
+  General settings_backpack items blocks name: ' <green>Otomatik Bloklar?'
   General settings_backpack items blocks lore:
   - ''
-  - ' <white>State: <green>%auto_blocks%'
-  - ' <yellow>Click to Change.'
-  General settings_backpack items sell name: ' <green>Auto Sell?'
+  - ' <white>Durum: <green>%auto_blocks%'
+  - ' <yellow>Değiştirmek için tıklayın.'
+  General settings_backpack items sell name: ' <green>Otomatik Satış?'
   General settings_backpack items sell lore:
   - ''
-  - ' <white>State: <green>%auto_sell%'
-  - ' <yellow>When turned on the backpack sells'
-  - <yellow>the items when you sell your inventory
+  - ' <white>Durum: <green>%auto_sell%'
+  - ' <yellow>Sırt çantası açıldığında, envanterinizi'
+  - <yellow>sattığınızda öğeleri satar
   - ''
-  - ' <yellow>Click to Change.'
+  - ' <yellow>Değiştirmek için tıklayın.'
   General backpack title: <yellow>%backpack_name% <dark_gray>[%page%/%pages%]
   General backpack items fill name: ' '
   General backpack items fill lore: [
     ]
-  General backpack items next name: ' <green>Next Page.'
+  General backpack items next name: ' <green>Sonraki Sayfa.'
   General backpack items next lore: [
     ]
-  General backpack items previous name: ' <green>Previous Page.'
+  General backpack items previous name: ' <green>Önceki Sayfa.'
   General backpack items previous lore: [
     ]
-  General backpack items sell name: ' <green>Sell items'
+  General backpack items sell name: ' <green>Eşyaları sat'
   General backpack items sell lore:
   - ''
-  - ' <yellow>Click to Sell'
-  General backpack items upgrade name: ' <green>Upgrade'
+  - ' <yellow>Satmak için tıklayın'
+  General backpack items upgrade name: ' <green>Yükseltme'
   General backpack items upgrade lore:
   - ''
-  - ' <white>Current: <aqua>%current_level%'
-  - ' <white>Next: <aqua>%next_level%'
-  - ' <white>Price: <green>$%current_value%'
+  - ' <white>Mevcut: <aqua>%current_level%'
+  - ' <white>Sonraki: <aqua>%next_level%'
+  - ' <white>Fiyat: <green>$%current_value%'
   - ' '
-  - ' <yellow>Click to Buy'
-  General backpack items maxlevel name: ' <red>Maximum level'
+  - ' <yellow>Satın almak için tıkla'
+  General backpack items maxlevel name: ' <red>Maksimum seviye'
   General backpack items maxlevel lore:
   - ''
-  - ' <white>Current: <aqua>%current_level%'
-  General backpack items order name: ' <green>Self organize'
+  - ' <white>Mevcut: <aqua>%current_level%'
+  General backpack items order name: ' <green>Kendini organize et'
   General backpack items order lore:
   - ''
-  - ' <yellow>This will group the items and'
-  - <yellow>place them in order.
-  General backpack items settings name: ' <green>Settings'
+  - ' <yellow>Bu, öğeleri gruplandırır'
+  - <yellow>ve sırayla yerleştirir.
+  General backpack items settings name: ' <green>Ayarlar'
   General backpack items settings lore:
   - ''
-  - <yellow>Click to open.
-  General backpack items back name: ' <green>Virtual Backpack home'
+  - <yellow>Açmak için tıklayın.
+  General backpack items back name: ' <green>Sanal Sırt Çantası ana sayfası'
   General backpack items back lore:
   - ''
-  - <yellow>Click to go to virtual backpack home.
+  - <yellow>Sanal sırt çantası ana sayfasına gitmek için tıklayın.
   General message title: ''
   General message items fill name: ' '
   General message items fill lore: [
     ]
 COMMANDS:
-  backpack help show on_help: ' <gold>/backpack help <gray>-<yellow> Show help menu '
-  backpack help show on_help_json hover_text: '<green>Click to view help of BackPacks '
-  backpack help show on_success: '%tag% <green>You are seeing the help!'
-  backpack help show on_error: '%tag%<red>Error to show text '
-  backpack help show on_usage: '%tag% <gold>Use <aqua>/backpack help'
-  backpack virtual show on_help: ' <gold>/backpack virtual <gray>-<yellow> Open virtual BackPack '
+  backpack help show on_help: ' <gold>/backpack help <gray>-<yellow> Yardım menüsünü göster '
+  backpack help show on_help_json hover_text: '<green>Sırt çantası yardımını görüntülemek için tıklayın '
+  backpack help show on_success: '%tag% <green>Tardımı görüyorsun!'
+  backpack help show on_error: '%tag%<red>Metni gösterme hatası '
+  backpack help show on_usage: '%tag% <aqua>/backpack help <gold>kullan'
+  backpack virtual show on_help: ' <gold>/backpack virtual <gray>-<yellow> Sanal Sırt çantasını aç '
   backpack virtual show on_help_json hover_text: <green>Click to open a virtual BackPack.
-  backpack virtual show on_success: '%tag% <green>You are seeing the virtual!'
-  backpack virtual show on_error: '%tag%<red>Error to open '
-  backpack virtual show on_usage: '%tag% <red>Use <gold>/backpack virtual'
-  backpack home show on_help: ' <gold>/backpack home <gray>-<yellow> Open home BackPack '
-  backpack home show on_help_json hover_text: '<green>Click to open a home BackPack '
-  backpack home show on_success: '%tag% <green>You are seeing the home!'
-  backpack home show on_error: '%tag%<red>Error to open '
-  backpack home show on_usage: '%tag% <red>Use <gold>/backpack home'
-  backpack crafts show on_help: ' <gold>/backpack crafts <gray>-<yellow> Open crafts list '
-  backpack crafts show on_help_json hover_text: '<green>Click to open a crafts list '
-  backpack crafts show on_success: '%tag% <green>You are seeing the crafts!'
-  backpack crafts show on_error: '%tag%<red>Error to open '
-  backpack crafts show on_usage: '%tag% <red>Use <gold>/backpack crafts'
-  ubackpack help show on_help: ' <dark_red>/ubackpack help <gray>-<yellow> Show help menu '
-  ubackpack help show on_help_json hover_text: '<green>Click to view help of BackPacks '
-  ubackpack help show on_success: '%tag% <green>Success to use help '
-  ubackpack help show on_error: '%tag% <red>Error to use help'
-  ubackpack help show on_usage: '%tag% <red>Error use <aqua>/ubackpack help'
-  ubackpack reload show on_help: ' <dark_red>/ubackpack reload <gray>-<yellow> Reload settings'
-  ubackpack reload show on_help_json hover_text: '<green>Click to Reload settings '
-  ubackpack reload show on_success: '%tag% <green>Successfully recharged!'
-  ubackpack reload show on_error: '%tag%<red>An error occurred when reloading the files'
-  ubackpack reload show on_usage: '%tag% <red>Use <dark_red>/ubackpack reload'
-  ubackpack open show on_help: ' <dark_red>/ubackpack open <UUID<gray>|<dark_red>NICKNAME<gray>|<dark_red>ID> <gray>-<yellow> Open a virtual or physical backpack'
-  ubackpack open show on_help_json hover_text: <green>Click to open a virtual or physical backpack
-  ubackpack open show on_success: '%tag% <green>Successfully!'
-  ubackpack open show on_error: '%tag%<red>An error occurred when opening '
-  ubackpack open show on_usage: '%tag% <red>Use <dark_red>/ubackpack open <UUID<gray>|<dark_red>NICKNAME<gray>|<dark_red>ID>'
-  ubackpack list show on_help: ' <dark_red>/ubackpack list <gray>-<yellow> List all Backpacks'
-  ubackpack list show on_help_json hover_text: <green>Click to list a players backpack
-  ubackpack list show on_success: '%tag% <green>Successfully!'
-  ubackpack list show on_error: '%tag%<red>An error occurred when listing '
-  ubackpack list show on_usage: '%tag% <red>Use <dark_red>/ubackpack list'
-  ubackpack give show on_help: ' <dark_red>/ubackpack give <player> <backpack> <amount> <gray>-<yellow> Give a backpack to a player'
+  backpack virtual show on_success: '%tag% <green>Sanalı görüyorsun!'
+  backpack virtual show on_error: '%tag%<red>Açma hatası '
+  backpack virtual show on_usage: '%tag% <gold>/backpack virtual <red>kullan'
+  backpack home show on_help: ' <gold>/backpack home <gray>-<yellow> Sırt çantasını aç '
+  backpack home show on_help_json hover_text: '<green>Bir Sırt Çantası açmak için tıklayın '
+  backpack home show on_success: '%tag% <green>Ana sayfayı görüyorsun!'
+  backpack home show on_error: '%tag%<red>Açma hatası '
+  backpack home show on_usage: '%tag% <gold>/backpack home <red>kullan'
+  backpack crafts show on_help: ' <gold>/backpack crafts <gray>-<yellow> Üretim listesini aç '
+  backpack crafts show on_help_json hover_text: '<green>Üretim listesini açmak için tıklayın '
+  backpack crafts show on_success: '%tag% <green>Üretimleri görüyorsun!'
+  backpack crafts show on_error: '%tag%<red>Açma hatası '
+  backpack crafts show on_usage: '%tag% <gold>/backpack crafts <red>kullan'
+  ubackpack help show on_help: ' <dark_red>/ubackpack help <gray>-<yellow> Yardım menüsünü göster '
+  ubackpack help show on_help_json hover_text: '<green>Sırt çantası yardımını görüntülemek için tıklayın '
+  ubackpack help show on_success: '%tag% <green>Yardımı kullanma başarılı '
+  ubackpack help show on_error: '%tag% <red>Yardımı kullanma hatası'
+  ubackpack help show on_usage: '%tag% <aqua>/ubackpack help <red>kullan'
+  ubackpack reload show on_help: ' <dark_red>/ubackpack reload <gray>-<yellow> Ayarları yeniden yükle'
+  ubackpack reload show on_help_json hover_text: '<green>Ayarları yeniden yüklemek için tıklayın '
+  ubackpack reload show on_success: '%tag% <green>Başarıyla yeniden yüklenildi!'
+  ubackpack reload show on_error: '%tag%<red>Dosyalar yeniden yüklenirken bir hata oluştu'
+  ubackpack reload show on_usage: '%tag% <dark_red>/ubackpack reload <red>kullan'
+  ubackpack open show on_help: ' <dark_red>/ubackpack open <UUID<gray>|<dark_red>TAKMA AD<gray>|<dark_red>ID> <gray>-<yellow> Sanal veya fiziksel bir sırt çantası açın'
+  ubackpack open show on_help_json hover_text: <green>Sanal veya fiziksel bir sırt çantası açmak için tıklayın
+  ubackpack open show on_success: '%tag% <green>Başarılı!'
+  ubackpack open show on_error: '%tag%<red>Açarken bir hata oluştu '
+  ubackpack open show on_usage: '%tag% <dark_red>/ubackpack open <UUID<gray>|<dark_red>TAKMA AD<gray>|<dark_red>ID> <red>kullan'
+  ubackpack list show on_help: ' <dark_red>/ubackpack list <gray>-<yellow> Tüm Sırt Çantalarını Listele'
+  ubackpack list show on_help_json hover_text: <green>Bir oyuncunun sırt çantasını listelemek için tıklayın
+  ubackpack list show on_success: '%tag% <green>Başarılı!'
+  ubackpack list show on_error: '%tag%<red>Listeleme sırasında bir hata oluştu '
+  ubackpack list show on_usage: '%tag% <dark_red>/ubackpack list <red>kullan'
+  ubackpack give show on_help: ' <dark_red>/ubackpack give <oyuncu> <sırt çantası> <miktar> <gray>-<yellow> Bir oyuncuya bir sırt çantası verin'
   ubackpack give show on_help_json hover_text: <green>Click to give a players to a backpack
-  ubackpack give show on_success: '%tag% <green>You have sent <aqua>%amount% <green>backpack <aqua>%backpack_name% <green>to <aqua>%player%'
-  ubackpack give show on_error: '%tag%<red>An error occurred when giveing '
-  ubackpack give show on_usage: '%tag% <red>Use <dark_red>/ubackpack give <player> <backpack> <amount>'
+  ubackpack give show on_success: '%tag% <aqua>%amount% <green>adet <aqua>%backpack_name% <green>çantasını <aqua>%player% <green>oyuncusuna verdin'
+  ubackpack give show on_error: '%tag%<red>Verirken bir hata oluştu '
+  ubackpack give show on_usage: '%tag% <dark_red>/ubackpack give <oyuncu> <sırt çantası> <miktar> <red>kullan'
