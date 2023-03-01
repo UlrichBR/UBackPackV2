@@ -221,7 +221,7 @@ COMMANDS:
   backpack help show on_error: '%tag%<red>Metni gösterme hatası '
   backpack help show on_usage: '%tag% <aqua>/backpack help <gold>kullan'
   backpack virtual show on_help: ' <gold>/backpack virtual <gray>-<yellow> Sanal Sırt çantasını aç '
-  backpack virtual show on_help_json hover_text: <green>Click to open a virtual BackPack.
+  backpack virtual show on_help_json hover_text: <green>Sanal Sırt Çantası açmak için tıklayın.
   backpack virtual show on_success: '%tag% <green>Sanalı görüyorsun!'
   backpack virtual show on_error: '%tag%<red>Açma hatası '
   backpack virtual show on_usage: '%tag% <gold>/backpack virtual <red>kullan'
@@ -256,7 +256,7 @@ COMMANDS:
   ubackpack list show on_error: '%tag%<red>Listeleme sırasında bir hata oluştu '
   ubackpack list show on_usage: '%tag% <dark_red>/ubackpack list <red>kullan'
   ubackpack give show on_help: ' <dark_red>/ubackpack give <oyuncu> <sırt çantası> <miktar> <gray>-<yellow> Bir oyuncuya bir sırt çantası verin'
-  ubackpack give show on_help_json hover_text: <green>Click to give a players to a backpack
+  ubackpack give show on_help_json hover_text: <green>Bir oyuncuya bir sırt çantası vermek için tıklayın
   ubackpack give show on_success: '%tag% <aqua>%amount% <green>adet <aqua>%backpack_name% <green>çantasını <aqua>%player% <green>oyuncusuna verdin'
   ubackpack give show on_error: '%tag%<red>Verirken bir hata oluştu '
   ubackpack give show on_usage: '%tag% <dark_red>/ubackpack give <oyuncu> <sırt çantası> <miktar> <red>kullan'
