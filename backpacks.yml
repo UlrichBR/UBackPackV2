@@ -1,0 +1,462 @@
+#
+#Lines of Craftingtable 
+# A-B-C
+# D-E-F
+# G-H-I
+#
+Backpacks:
+  # Comum backpack
+  iron:
+    pages: 1
+    lines: 2
+    upgradable: false
+    organizable: false
+    sellable: true
+    max_upgrade_tables: 0
+    craftsound: BLOCK_BEACON_AMBIENT
+    craftpermission: ubackpack.craft.iron
+    block_drop: false
+    keep_on_death: false
+    vault: false
+    material: PLAYER_HEAD
+    amount: 1
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTJiYjM4NTE2YjI5NTA0MTg2ZTExNTU5Y2Q1MjUwYWUyMThkYjRkZGQyN2FlNDM4NzI2Yzg0N2NlNmIzYzk4In19fQ=='
+    glow: false
+    name: '<gradient:gray:white>Iron Backpack'
+    lore:
+    - ' '
+    - ' <white>Registred: <red>No!'
+    - ' <white>Pages: <green>1 '
+    - ' <yellow>Open to register.'
+    # Nbts accept string and integer format, for example: CustomNbt:Test
+    nbt: []
+    model: 0
+    # This option enables sending mined blocks directly to the backpack, avoiding ground drop.
+    mineration:
+      enabled: false
+      # Items that cannot be captured in mining
+      blacklist:
+      - COBBLESTONE
+      - STONE
+      # Disabled words mineration
+      disabled_words:
+      - disabled_word
+    recipes:
+      # LINE 1
+      #A-B-C
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      A:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      B:
+        material: IRON_BLOCK
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      C:
+        material: AIR
+      # LINE 2
+      # D-E-F
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      D:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      E:
+        material: CHEST
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      F:
+        material: AIR
+      # LINE 3
+      # G-H-I
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      G:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      H:
+        material: IRON_BLOCK
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      I:
+        material: AIR
+  # Comum backpack
+  gold:
+    pages: 1
+    lines: 3
+    upgradable: false
+    organizable: false
+    sellable: true
+    max_upgrade_tables: 0
+    craftsound: BLOCK_BEACON_AMBIENT
+    craftpermission: ubackpack.craft.gold
+    block_drop: false
+    keep_on_death: false
+    vault: false
+    material: PLAYER_HEAD
+    amount: 1
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTFiYmJjNWMyNDM4NGVjYjJmNjg0NGRhMjg1Y2NjZjllYjAxMWM3YTY2NzAxNzdjZjc1Y2Q2NTUxM2JjMTI3NCJ9fX0='
+    glow: false
+    name: '<gradient:gold:white>Gold Backpack'
+    lore:
+    - ' '
+    - ' <white>Registred: <red>No!'
+    - ' <white>Pages: <green>1 '
+    - ' <yellow>Open to register.'
+    # Nbts accept string and integer format, for example: CustomNbt:Test
+    nbt: []
+    model: 0
+    # This option enables sending mined blocks directly to the backpack, avoiding ground drop.
+    mineration:
+      enabled: false
+      # Items that cannot be captured in mining
+      blacklist:
+      - COBBLESTONE
+      - STONE
+      # Disabled words mineration
+      disabled_words:
+      - disabled_word
+    recipes:
+      # LINE 1
+      #A-B-C
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      A:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      B:
+        material: GOLD_BLOCK
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      C:
+        material: AIR
+      # LINE 2
+      # D-E-F
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      D:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      E:
+        material: CHEST
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      F:
+        material: AIR
+      # LINE 3
+      # G-H-I
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      G:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      H:
+        material: GOLD_BLOCK
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      I:
+        material: AIR
+  # Comum backpack
+  redstone:
+    pages: 1
+    lines: 5
+    upgradable: false
+    organizable: true
+    sellable: true
+    max_upgrade_tables: 0
+    craftsound: BLOCK_BEACON_AMBIENT
+    craftpermission: ubackpack.craft.redstone
+    block_drop: false
+    keep_on_death: false
+    vault: false
+    material: PLAYER_HEAD
+    amount: 1
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmNlMDE2OTlmNzk2Y2JkZTk1Yzg0OWJlZTNjYzM2OTg3ODQ1MmI0MGE0MTE0NDM2NmQ2NmI0YTA4MjZjZmFhMCJ9fX0='
+    glow: false
+    name: '<gradient:dark_red:white>Redstone Backpack'
+    lore:
+    - ' '
+    - ' <white>Registred: <red>No!'
+    - ' <white>Pages: <green>1 '
+    - ' <yellow>Open to register.'
+    # Nbts accept string and integer format, for example: CustomNbt:Test
+    nbt: []
+    model: 0
+    # This option enables sending mined blocks directly to the backpack, avoiding ground drop.
+    mineration:
+      enabled: false
+      # Items that cannot be captured in mining
+      blacklist:
+      - COBBLESTONE
+      - STONE
+      # Disabled words mineration
+      disabled_words:
+      - disabled_word
+    recipes:
+      # LINE 1
+      #A-B-C
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      A:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      B:
+        material: REDSTONE_BLOCK
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      C:
+        material: AIR
+      # LINE 2
+      # D-E-F
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      D:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      E:
+        material: CHEST
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      F:
+        material: AIR
+      # LINE 3
+      # G-H-I
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      G:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      H:
+        material: REDSTONE_BLOCK
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      I:
+        material: AIR
+  # Comum backpack
+  diamond:
+    pages: 1
+    lines: 5
+    upgradable: true
+    organizable: true
+    sellable: true
+    diamond_upgrade_tables: 1
+    craftsound: BLOCK_BEACON_AMBIENT
+    craftpermission: ubackpack.craft.diamond
+    block_drop: false
+    keep_on_death: false
+    vault: false
+    material: PLAYER_HEAD
+    amount: 1
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJjMzdiZmExMTg2M2QwMDI1NTFhMDJiNTE5ZDcxNTRkYTgyNjcwNWQyMDk4MjU5MTUyMmRlMmVhMWIyODhjMiJ9fX0='
+    glow: false
+    name: '<gradient:aqua:white>Diamond Backpack'
+    lore:
+    - ' '
+    - ' <white>Registred: <red>No!'
+    - ' <white>Pages: <green>1 '
+    - ' <yellow>Open to register.'
+    # Nbts accept string and integer format, for example: CustomNbt:Test
+    nbt: []
+    model: 0
+    # This option enables sending mined blocks directly to the backpack, avoiding ground drop.
+    mineration:
+      enabled: false
+      # Items that cannot be captured in mining
+      blacklist:
+      - COBBLESTONE
+      - STONE
+      # Disabled words mineration
+      disabled_words:
+      - disabled_word
+    recipes:
+      # LINE 1
+      #A-B-C
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      A:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      B:
+        material: DIAMOND_BLOCK
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      C:
+        material: AIR
+      # LINE 2
+      # D-E-F
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      D:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      E:
+        material: CHEST
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      F:
+        material: AIR
+      # LINE 3
+      # G-H-I
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      G:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      H:
+        material: DIAMOND_BLOCK
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      I:
+        material: AIR
+  # VIP backpack
+  emerald:
+    pages: 2
+    lines: 5
+    upgradable: true
+    organizable: true
+    sellable: true
+    max_upgrade_tables: 2
+    craftsound: BLOCK_BEACON_AMBIENT
+    craftpermission: ubackpack.craft.emerald
+    block_drop: false
+    keep_on_death: false
+    vault: false
+    material: PLAYER_HEAD
+    amount: 1
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIxMjhmNDhkOTk3MTg2NTYzZmJjNWI0N2E4OGMwZDBhYWM5MmZhMmMyODVjZDFmYWU0MjBjMzRmYThmMjAxMCJ9fX0='
+    glow: false
+    name: '<gradient:dark_green:white>Emerald Backpack'
+    lore:
+    - ' '
+    - ' <white>Registred: <red>No!'
+    - ' <white>Pages: <green>2 '
+    - ' <yellow>Open to register.'
+    # Nbts accept string and integer format, for example: CustomNbt:Test
+    nbt: []
+    model: 0
+    # This option enables sending mined blocks directly to the backpack, avoiding ground drop.
+    mineration:
+      enabled: false
+      # Items that cannot be captured in mining
+      blacklist:
+      - COBBLESTONE
+      - STONE
+      # Disabled words mineration
+      disabled_words:
+      - disabled_word
+    recipes:
+      # LINE 1
+      #A-B-C
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      A:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      B:
+        material: EMERALD_BLOCK
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      C:
+        material: AIR
+      # LINE 2
+      # D-E-F
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      D:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      E:
+        material: CHEST
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      F:
+        material: AIR
+      # LINE 3
+      # G-H-I
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      G:
+        material: AIR
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      H:
+        material: EMERALD_BLOCK
+        amount: 1
+        name: ''
+        lore: [
+          ]
+        nbt: [
+          ]
+        glow: false
+      #If the name, lore and nbt fields are filled, the item for the craft must have the identical fields
+      I:
+        material: AIR

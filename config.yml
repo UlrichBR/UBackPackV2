@@ -1,0 +1,229 @@
+Plugin:
+  check_for_updates: true
+ 
+Config:
+  # You can insert your own languages ​​in the /language/ folder following the Lang_ID.yml pattern.
+  # Default languages:
+  # EN - English
+  # BR - Brazilian
+  # TR - Turkish
+  language: EN
+  tag: <#FFAA00><bold>U</bold><gradient:yellow:white><bold>Backpack</bold></gradient> <gray>|
+  date_format: dd/MM/yyyy HH:mm
+  #Bypass permission: ubackpack.bypass.world
+  disabled_worlds:
+  - disabled_world
+  # WorldGuard Regions
+  #Bypass permission: ubackpack.bypass.region
+  disabled_regions:
+  - disabled_regions
+  disable_equip: false
+ 
+Backpack:
+  put:
+    #With this option you can list items that cannot be placed inside the backpack
+    disabled:
+    - ENDER_CHEST
+    - CRAFTING_TABLE
+    #With this option you can list nbts that cannot be placed inside the backpack
+    #acceptable: 'named=nbt_name', value=nbt_name;nbt_value or model=12345 (model for 1.14+)
+    #example: 'model=123456', 'named=my_nbt_custom'
+    disabled_nbt: [
+      ]
+    #The whitelist/enabled field overrides the blacklist/disabled field.
+    enabled: [
+      ]
+    #The whitelist/enabled_nbt field overrides the blacklist/disabled_nbt field.
+    #acceptable: 'named=nbt_name', value=nbt_name;nbt_value or model=12345 (model for 1.14+)
+    #example: 'model=123456', 'named=my_nbt_custom'
+    enabled_nbt: [
+      ]
+  # Control interaction with physical backpacks
+  interaction:
+    left_click: true
+    right_click: true
+    air_click: true
+    block_click: true
+    #in seconds
+    virtual_delay: 2
+    #in seconds
+    physical_delay: 2
+  load:
+    ondemand: true
+    # This high sync option always carries the storage mode backpacks, can be used for bungeecord backpacks. This only works in MYSQL mode.
+    high_sync: false
+    animated: true
+    tick_sound: BLOCK_LAVA_POP
+  auto_default:
+    # time in seconds
+    time: 3
+    pickup:
+      default: false
+      enable_change: true
+      disabled_blocks:
+      - CHEST
+      - BEACON
+      # If this permission is written the player will need this permission to use it
+      required_permission: ''
+    smelting:
+      default: false
+      enable_change: true
+      disabled_blocks:
+      - STONE
+      # If this permission is written the player will need this permission to use it
+      required_permission: ''
+    blocks:
+      default: false
+      enable_change: true
+      disabled_blocks:
+      - STONE
+      # If this permission is written the player will need this permission to use it
+      required_permission: ''
+    sell:
+      default: false
+      enable_change: true
+      disabled_blocks:
+      - STONE
+      # If this permission is written the player will need this permission to use it
+      required_permission: ''
+  active_save:
+    enabled: true
+    # IN SECONDS
+    time: 5
+  register:
+    registred_lore:
+    - ' '
+    - ' <white>Registred: <green>Yes!'
+    - ' <white>Slots: <green>%slots%'
+    - ' <white>Creation: <green>%creation_date%'
+    - ' <white>Id: <dark_gray>#%id%'
+    - ' '
+    - ' <yellow>LEFT-CLICK to Open'
+    - ' <yellow>RIGHT-CLICK to Home.'
+  craft:
+    use_permission: ubackpack.use.craft
+  # This configuration looks for MetaData in items when collecting, the tag needs to be the same one that stores the amount of items.
+  stacker:
+    tags:
+    - heroQuant
+    - US_AMT
+    - ws:stack-amount
+    - Quantity
+  virtual:
+    use_permission: ubackpack.use.virtual
+    item:
+      name: <gradient:gold:yellow>Virtual Backpack
+      material: PLAYER_HEAD
+      texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTgyNjQxNzg2YTQyMjA4OGY3NWRjZWU3MDIwNWQ1ODA2MDBmNjlkNmFhMmY3N2QyNjc4YjU4ZDg5YjY5NzNhNiJ9fX0=
+      glow: false
+      amount: 1
+      lore:
+      - ''
+      nbt:
+      - ''
+      # only numeric
+      model: 0
+      block_drop: true
+      keep_on_death: true
+      # This option is used to lock the virtual backpack in the inventory, the user cannot remove or move it from location.
+      # You can choose the active slot and also which worlds this is disabled.
+      inventory_lock:
+        enabled: false
+        # player slot
+        slot: 0
+        # Disabled words lock item.
+        disabled_words:
+        - disabled_word
+    # This option enables sending mined blocks directly to the backpack, avoiding ground drop.
+    mineration:
+      enabled: false
+      # Items that cannot be captured in mining
+      blacklist:
+      - COBBLESTONE
+      - STONE
+      # Disabled words mineration
+      disabled_words:
+      - disabled_word
+    default_pages: 1
+    default_lines: 3
+    #
+    # The permission tag is used as follows:
+    # PERMISSIONS: PAGES-LINES
+    # example:
+    # "one: 1-3" - The "ubackpack.virtual.one" permission gives the player 1 page with 3 lines each.
+    # "three: 2-5" - The "ubackpack.virtual.three" permission gives the player 2 page with 5 lines each.
+    #
+    # The player uses the permission with the highest number of PAGES (if he has that permission)
+    #
+    permissions:
+      #permission: ubackpack.virtual.one - 1 page with 3 lines each.
+      one: 1-3
+      #permission: ubackpack.virtual.two - 1 page with 5 lines each.
+      two: 1-5
+      #permission: ubackpack.virtual.three - 2 page with 5 lines each.
+      three: 2-5
+    organizable: true
+    # This option requires hooking with sales plugins like AutoSell or others available in the configuration.
+    sellable: true
+    # his item requires Vault or linked economy, where the player can store money inside each backpack separately.
+    vault: true
+    upgrade:
+      enabled: true
+      max_upgrade_pages: 2
+      #formula: price*level
+      price: 100.0
+      sound_success: ENTITY_PLAYER_LEVELUP
+      sound_error: ENTITY_VILLAGER_HURT
+  upgrade_permission:
+    
+    # If the player doesn't have permissions below, the limit is defined in each of the backpacks
+    #
+    # The permission tag is used as follows:
+    # PERMISSIONS: MAX_UPGRADE
+    # example:
+    # "one: 1" - The "ubackpack.upgrade_virtual.one" permission gives the player 1 upgrade.
+    # "two: 2" - The "ubackpack.upgrade_virtual.two" permission gives the player 2 upgrades.
+    # "other: 10" - The "ubackpack.upgrade_virtual.other" permission gives the player 10 upgrades.
+    #
+    # The player uses the permission with the highest number of UPGRADES (if he has that permission)
+    #
+    virtual:
+      #permission: ubackpack.upgrade_virtual.one - 1 upgrade.
+      one: 1
+     
+    # If the player doesn't have permissions below, the limit is defined in each of the backpacks
+    #
+    # The permission tag is used as follows:
+    # PERMISSIONS: MAX_UPGRADE
+    # example:
+    # "one: 1" - The "ubackpack.upgrade_physical.one" permission gives the player 1 upgrade.
+    # "two: 2" - The "ubackpack.upgrade_physical.two" permission gives the player 2 upgrades.
+    # "other: 10" - The "ubackpack.upgrade_physical.other" permission gives the player 10 upgrades.
+    #
+    # The player uses the permission with the highest number of UPGRADES (if he has that permission)
+    #
+    physical:
+      #permission: ubackpack.upgrade_physical.one - 1 upgrade.
+      one: 1
+   
+  # This permission is to limit how many backpacks the player can carry in their inventory.
+  # If the player doesn't have permissions below, the limit is defined in each of the backpacks
+  #
+  # The permission tag is used as follows:
+  # PERMISSIONS: MAX_CARRY
+  # example:
+  # "one: 1" - The "ubackpack.carry.one" permission for the player to carry 1 backpack.
+  # "two: 2" - The "ubackpack.carry.two" permission for the player to carry 2 backpack.
+  # "other: 10" - The "ubackpack.carry.other" permission for the player to carry 10 backpack.
+  #
+  # The player uses the permission with the most CARRY (if they have this permission)
+  #
+  carry:
+     
+    # If this option is turned off, there will be no inventory count of backpacks.
+    enabled: true
+    # If the player doesnt have any permissions he uses the default.
+    default: 1
+    permission:
+      #permission: ubackpack.carry.two - 2 backpack.
+      two: 2

@@ -1,0 +1,124 @@
+Commands:
+  list:
+    backpack:
+      help:
+        enabled: true
+        permission: ubackpack.player.help
+        no_permission_message: '%tag% <red>You dont have permission for this.'
+        alias: ajuda
+        # in seconds
+        cooldown: 0
+        show:
+          on_help_json:
+            click_type: RUN_COMMAND
+            click_action: /backpack help
+        sound:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+          extra:
+            volume: 10
+            pitch: 1
+        title:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+        actionbar:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+      virtual:
+        enabled: true
+        permission: ubackpack.player.virtual
+        no_permission_message: '%tag% <red>You dont have permission for this.'
+        alias: virtual
+        # in seconds
+        cooldown: 0
+        show:
+          on_help_json:
+            click_type: RUN_COMMAND
+            click_action: /backpack virtual
+      home:
+        enabled: true
+        permission: ubackpack.player.home
+        no_permission_message: '%tag% <red>You dont have permission for this.'
+        alias: home
+        # in seconds
+        cooldown: 0
+        show:
+          on_help_json:
+            click_type: RUN_COMMAND
+            click_action: /backpack home
+      crafts:
+        enabled: true
+        permission: ubackpack.player.crafts
+        no_permission_message: '%tag% <red>You dont have permission for this.'
+        alias: crafts
+        # in seconds
+        cooldown: 0
+        show:
+          on_help_json:
+            click_type: RUN_COMMAND
+            click_action: /backpack crafts
+    ubackpack:
+      help:
+        permission: ubackpacks.admin.help
+        no_permission_message: '%tag% <red>You dont have permission for this.'
+        alias: ajuda
+        show:
+          on_help_json:
+            click_type: RUN_COMMAND
+            click_action: /ubackpack help
+      reload:
+        enabled: true
+        permission: ubackpack.admin.reload
+        no_permission_message: '%tag% <red>You dont have permission for this.'
+        alias: reload
+        # in seconds
+        cooldown: 0
+        show:
+          on_help_json:
+            click_type: RUN_COMMAND
+            click_action: /ubackpack reload
+      open:
+        enabled: true
+        permission: ubackpack.admin.open
+        no_permission_message: '%tag% <red>You dont have permission for this.'
+        alias: open
+        # in seconds
+        cooldown: 0
+        show:
+          on_help_json:
+            click_type: SUGGEST_COMMAND
+            click_action: /ubackpack open <UUID|NICKNAME|ID>
+      list:
+        enabled: true
+        permission: ubackpack.admin.list
+        no_permission_message: '%tag% <red>You dont have permission for this.'
+        alias: list
+        # in seconds
+        cooldown: 0
+        show:
+          on_help_json:
+            click_type: RUN_COMMAND
+            click_action: /ubackpack list
+      give:
+        enabled: true
+        permission: ubackpack.admin.give
+        no_permission_message: '%tag% <red>You dont have permission for this.'
+        alias: give
+        cooldown: 0
+        show:
+          on_help_json:
+            click_type: SUGGEST_COMMAND
+            click_action: /ubackpack give <player> <backpack> <amount>
+      registers:
+        enabled: true
+        permission: ubackpack.admin.registers
+        no_permission_message: '%tag% <red>You dont have permission for this.'
+        alias: registers
+        cooldown: 0
+        show:
+          on_help_json:
+            click_type: SUGGEST_COMMAND
+            click_action: /ubackpack registers <player|UUID>

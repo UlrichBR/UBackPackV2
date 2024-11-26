@@ -1,0 +1,91 @@
+Json:
+  simple:
+    command_unknown:
+      center: false
+      raw_text: '%tag% <red>Unknown command, <aqua>[CLICK HERE] <red>or use <light_purple>/ubackpack help <red>to see the list of available commands.'
+      hover_text: <green>Click here to view Help.
+      click_type: RUN_COMMAND
+      click_action: /ubackpack help
+      raw_base_color: RED
+    command_unknown_player:
+      center: false
+      raw_text: '%tag% <red>Unknown command, <aqua>[CLICK HERE] <red>or use <light_purple>/backpack help <red>to see the list of available commands.'
+      hover_text: <green>Click here to view Help.
+      click_type: RUN_COMMAND
+      click_action: /backpack help
+      raw_base_color: RED
+    listbackpacks:
+      raw_text: ' <green>%backpack_id% <gray>- %backpack_name% <dark_gray>(%backpack_pages%/%backpack_lines%)'
+      hover_text: <green>Click to give.
+      click_type: SUGGEST_COMMAND
+      click_action: /ubackpack give %player% %backpack_id% 1
+    list_next:
+      raw_text: ' <aqua>Next page >>'
+      hover_text: <green>Click to see the next page.
+      click_type: RUN_COMMAND
+      click_action: /backpack list %next_page%
+    list_prev:
+      raw_text: ' << <aqua>Previous page'
+      hover_text: <green>Click to see the previous page.
+      click_type: RUN_COMMAND
+      click_action: /backpack list %prev_page%
+    list_controler:
+      raw_text: ' << <aqua>Previous page'
+      hover_text: <green>Click to see the previous page.
+      click_type: RUN_COMMAND
+      click_action: /backpack list %prev_page%
+  advanced:
+    help_pagination:
+      lines:
+        start:
+          center: false
+          raw_text: ' '
+        actions:
+          center: false
+          raw_text: ''
+          sublines:
+            prev:
+              raw_text: ' <green><< Previous '
+              hover_text: <green>Click to see the previous page.
+              click_type: RUN_COMMAND
+              click_action: /backpack help %prev_page%
+              raw_base_color: ''
+            join:
+              raw_text: ' <gray>| '
+              hover_text: ' '
+              click_type: ''
+              click_action: ''
+              raw_base_color: ''
+            next:
+              raw_text: ' <green>Next >> '
+              hover_text: <green>Click to see the next page.
+              click_type: RUN_COMMAND
+              click_action: /backpack help %next_page%
+              raw_base_color: ''
+    help_pagination_admin:
+      lines:
+        start:
+          center: false
+          raw_text: ' '
+        actions:
+          center: false
+          raw_text: ''
+          sublines:
+            prev:
+              raw_text: ' <green><< Previous '
+              hover_text: <green>Click to see the previous page.
+              click_type: RUN_COMMAND
+              click_action: /ubackpack help %prev_page%
+              raw_base_color: ''
+            join:
+              raw_text: ' <gray>| '
+              hover_text: ' '
+              click_type: ''
+              click_action: ''
+              raw_base_color: ''
+            next:
+              raw_text: ' <green>Next >> '
+              hover_text: <green>Click to see the next page.
+              click_type: RUN_COMMAND
+              click_action: /ubackpack help %next_page%
+              raw_base_color: ''
